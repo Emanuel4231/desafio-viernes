@@ -1,17 +1,13 @@
-
-let nombreproducto = " Jordan ";
+const nombreproducto = " Jordan ";
 let preciounitario =  500 ;
 let cantidadeseada = prompt("Cuantas" + nombreproducto + "$" + preciounitario + " desea comprar: " );
 
-let total = preciounitario * cantidadeseada;
+function sumarproducto (preciounitario, cantidadeseada) {
+    let totalgastado = preciounitario * cantidadeseada;
+    return totalgastado
+}
+let totalDelProducto = sumarproducto (preciounitario, cantidadeseada)
 
-alert("el total a pagar por " + cantidadeseada + "" + nombreproducto + "es: $" + total);
+console.log("El total a pagar por el producto es : $" + totalDelProducto)
 
-
-
-
-
-
-
-
-
+alert("el total a pagar por " + cantidadeseada + "" + nombreproducto + "es: $" + totalDelProducto);
